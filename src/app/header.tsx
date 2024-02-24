@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
 
-    return <div className="flex flex-row p-20">
+    return <div className="flex flex-row mx-64 my-20 header">
         <Image
             src="/logo_1.webp"
             alt="logo_1"
@@ -17,13 +17,13 @@ export default function Header() {
                 width={273}
                 height={48}
             />
-            <div className="flex flex-row justify-between text-xl">
+            <div className="flex flex-row justify-between text-xl menu">
                 <Link href="/">HOME</Link>
                 <Link href="/about">회사소개</Link>
-                <Link href="/dashboard">택배서비스</Link>
-                <Link href="/dashboard">투어서비스</Link>
-                <Link href="/dashboard">이달의이벤트</Link>
-                <Link href="/dashboard">고객센터</Link>
+                <Link href="/taxi-service">택시서비스</Link>
+                <Link href="/tour-service">투어서비스</Link>
+                <Link href="/event">이달의이벤트</Link>
+                <Link href="/contact-us">고객센터</Link>
             </div>
         </div>
     </div>

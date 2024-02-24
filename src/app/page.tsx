@@ -3,12 +3,13 @@ import LikeButton from './like-button';
 import Header from './header';
 import EmblaCarousel from './slideshow'
 import Ad from './ad'
+import Footer from "./footer";
 
 export default function Home() {
   return (<>
     <Header />
     <EmblaCarousel />
-    <div className="flex flex-col items-start p-20">
+    <div className="flex flex-col items-start">
       <p className="text-4xl text-red-500">
         {`공항 <-> 와이키키내 호텔은 할인 정액 편도 35달러`}</p>
       <p className="text-2xl">{`- 정상가격 $50~$55`}</p>
@@ -19,11 +20,40 @@ export default function Home() {
 
       <p className="text-2xl">저희 <span className="text-red-500">블로그</span>에는 하와이에 대한 정보가 가득 들어 있습니다 저희 <span className="text-red-500">블로그</span>에 들어 가셔서 유익한 많은 정보 얻어 가시기 바랍니다.</p>
     </div>
-    <Ad path="/ad_1.webp"/>
-    <Ad path="/ad_2.webp"/>
-    <Ad path="/ad_3.webp"/>
-    <Ad path="/ad_4.webp"/>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <Image
+      src="/ad_1.webp"
+      alt="ad_1"
+      width={500}
+      height={500}
+      layout="responsive"
+    />
+    <Image
+      src="/ad_2.webp"
+      alt="ad_2"
+      width={500}
+      height={500}
+      layout="responsive"
+    />
+    <Image
+      src="/ad_3.webp"
+      alt="ad_3"
+      width={500}
+      height={500}
+      layout="responsive"
+    />
+    <Image
+      src="/ad_4.webp"
+      alt="ad_4"
+      width={500}
+      height={500}
+      layout="responsive"
+    />
+    {/* <Ad path="/ad_1.webp" />
+    <Ad path="/ad_2.webp" />
+    <Ad path="/ad_3.webp" />
+    <Ad path="/ad_4.webp" /> */}
+    <Footer />
+    {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -130,7 +160,7 @@ export default function Home() {
         </a>
       </div>
       <LikeButton />
-    </main>
+    </main> */}
   </>
   );
 }

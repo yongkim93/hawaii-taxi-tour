@@ -1,6 +1,8 @@
 import Header from '../header';
 import Image from 'next/image';
 import Contact from '../component/contact'
+import ContactForm from '../component/contact-form'
+import Footer from '../footer';
 
 export default function Intro() {
     return <div>
@@ -14,7 +16,7 @@ export default function Intro() {
             // layout='responsive'
             />
             <div className='pt-20'>
-                <p>저희 하와이 택시&투어는 관광객 여러분들을 위해 항상 최상의 서비스를 준비하고 있습니다.</p>
+                <p className='text-lg font-semibold'>저희 하와이 택시&투어는 관광객 여러분들을 위해 항상 최상의 서비스를 준비하고 있습니다.</p>
                 <p>보다 편안하고 보다 알찬 하와이 관광을 위해 항상 최선을 다하고 있습니다.</p>
                 <p>저희 하와이 택시&투어는 하와이 현지에서 운영되고 있는 관광 서비스업 업체이며 택시 서비스와 투어서비스를 병행하며 하와이 한인 관광객분들을 위해 최선을 다하고 있습니다.</p>
                 <p>저희 하와이 택시&투어는 신혼여행, 가족여행, 개인관광, 효도관광 등 각종 관광을 서비스 하고 있습니다.</p>
@@ -26,6 +28,10 @@ export default function Intro() {
                 <p>감사합니다.</p>
             </div>
             <Contact />
+
+            <ContactForm />
         </div>
+
+        <Footer />
     </div>
 }
