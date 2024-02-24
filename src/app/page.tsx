@@ -20,34 +20,32 @@ export default function Home() {
 
       <p className="text-2xl">저희 <span className="text-red-500">블로그</span>에는 하와이에 대한 정보가 가득 들어 있습니다 저희 <span className="text-red-500">블로그</span>에 들어 가셔서 유익한 많은 정보 얻어 가시기 바랍니다.</p>
     </div>
-    <Image
-      src="/ad_1.webp"
-      alt="ad_1"
-      width={500}
-      height={500}
-      layout="responsive"
-    />
-    <Image
-      src="/ad_2.webp"
-      alt="ad_2"
-      width={500}
-      height={500}
-      layout="responsive"
-    />
-    <Image
-      src="/ad_3.webp"
-      alt="ad_3"
-      width={500}
-      height={500}
-      layout="responsive"
-    />
-    <Image
-      src="/ad_4.webp"
-      alt="ad_4"
-      width={500}
-      height={500}
-      layout="responsive"
-    />
+    <div className="flex flex-col items-center pt-10">
+      <Image
+        src="/ad_1.webp"
+        alt="ad_1"
+        width={500}
+        height={500}
+      />
+      <Image
+        src="/ad_2.webp"
+        alt="ad_2"
+        width={500}
+        height={500}
+      />
+      <Image
+        src="/ad_3.webp"
+        alt="ad_3"
+        width={500}
+        height={500}
+      />
+      <Image
+        src="/ad_4.webp"
+        alt="ad_4"
+        width={500}
+        height={500}
+      />
+    </div>
     {/* <Ad path="/ad_1.webp" />
     <Ad path="/ad_2.webp" />
     <Ad path="/ad_3.webp" />

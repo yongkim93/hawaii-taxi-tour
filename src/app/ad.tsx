@@ -5,7 +5,7 @@ export default function Ad({ path }) {
         <Image
             src={path}
             alt={path}
-            layout="responsive"
+            // layout="responsive"
             width={500}
             height={500}
             // width="0"

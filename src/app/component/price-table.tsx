@@ -23,7 +23,7 @@ export default function PriceTable() {
         { 운행지역: '섬일주 투어 8시간 소요', 정상가편도: '시간당 $60.00', 할인편도: '시간당 할인가 $45.00', 할인왕복: '계 $360.00' },
     ]
     return (
-        <div className="px-48 py-5">
+        <div className="px-48 py-5 price-table">
             <Table data={data}>
                 <Table.Column prop="운행지역" label="운행지역" />
                 <Table.Column prop="정상가편도" label="정상가편도" />

@@ -17,7 +17,7 @@ export default function Intro() {
                 height={500}
             // layout='responsive'
             />
-            <div className='pt-20'>
+            <div className='pt-20 w-full'>
                 <div className='flex flex-col items-center'>
                     <p className='text-4xl text-red-500'>{'공항 <-> 와이키키내 호텔은 할인 정액 편도 35달러'}</p>
                     <p className='text-2xl'>정상 가격 $50~$55</p>

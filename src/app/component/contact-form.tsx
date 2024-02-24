@@ -3,7 +3,7 @@
 import { Button, Input, Textarea } from "@geist-ui/core"
 
 export default function ContactForm() {
-    return <div className="flex flex-col w-1/2">
+    return <div className="flex flex-col w-1/2 contact-form">
         <div className="flex flex-row">
             <div className="flex flex-col">
                 <Input placeholder="이름 (필수)" crossOrigin="" />
