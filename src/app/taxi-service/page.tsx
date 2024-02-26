@@ -4,12 +4,14 @@ import Contact from '../component/contact'
 import ContactForm from '../component/contact-form'
 import PriceTable from '../component/price-table';
 import Footer from '../footer';
+import HeaderMenu from '../component/header-menu';
 
 export default function Intro() {
     return <div>
         <Header />
+        <HeaderMenu />
         <div className='flex flex-col items-center'>
-            <p className='pb-20 text-5xl'>{`Taxi Service – 택시서비스`}</p>
+            <p className='pb-20 text-5xl title'>{`Taxi Service – 택시서비스`}</p>
             <Image
                 src="/banner_4.webp"
                 alt="about"
@@ -19,8 +21,8 @@ export default function Intro() {
             />
             <div className='pt-20 w-full'>
                 <div className='flex flex-col items-center'>
-                    <p className='text-4xl text-red-500'>{'공항 <-> 와이키키내 호텔은 할인 정액 편도 35달러'}</p>
-                    <p className='text-2xl'>정상 가격 $50~$55</p>
+                    <p className='text-4xl text-red-500 title'>{'공항 <-> 와이키키내 호텔은 할인 정액 편도 35달러'}</p>
+                    <p className='text-2xl sub-title'>정상 가격 $50~$55</p>
                 </div>
                 <p>공항에서 호텔 이동시나 반대일 경우 다른 승객과 합승하는 회사가 대부분 입니다 저희 회사는 절대로 다른 승객과 합승을 하지 않으며 <span className="text-red-500">손님을 단독 이동</span>으로 진행 합니다.</p>
                 <p>그리고 투어도 <span className="text-red-500">단독 투어</span>로 진행 됩니다.</p>

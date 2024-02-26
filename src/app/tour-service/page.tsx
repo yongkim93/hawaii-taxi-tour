@@ -3,12 +3,14 @@ import Image from 'next/image';
 import Contact from '../component/contact'
 import ContactForm from '../component/contact-form'
 import Footer from '../footer';
+import HeaderMenu from '../component/header-menu';
 
 export default function Intro() {
     return <div>
         <Header />
+        <HeaderMenu />
         <div className='flex flex-col items-center tour-service'>
-            <p className='pb-20 text-5xl'>{`Tour Service – 투어서비스`}</p>
+            <p className='pb-20 text-5xl title'>{`Tour Service – 투어서비스`}</p>
             <Image
                 src="/tour_1.webp"
                 alt="tour_1"
